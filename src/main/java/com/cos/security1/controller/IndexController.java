@@ -92,7 +92,7 @@ public class IndexController {
         String rawPassword = user.getPassword();
         String encPassword = bCryptPasswordEncoder.encode(rawPassword);
         user.setPassword(encPassword);
-
+        int a = 1;
         userRepository.save(user); // 회원가입 잘됨. 비빌번호: 1234 => 시큐리티로 로그인을 할 수 없음. 이유는 패스워드가 암호화가 안되었기 때문이다.
         return "redirect:/loginForm";
     }
