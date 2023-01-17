@@ -19,6 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
 
+// 스프링부트 기본 로그인 + OAuth2.0 로그인 = 통합해서 구현을 했습니다.
+// 웹 애플리케이션을 만들면 됨.
+
 @Controller
 public class IndexController {
 
